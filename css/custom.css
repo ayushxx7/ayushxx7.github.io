@@ -1,8 +1,8 @@
-body 
+/*body 
 { 
 	background: black !important; 
 }
-
+*/
 
 
 #services
@@ -10,7 +10,15 @@ body
 	padding-top: 4em;
 }
 
+.pointer
+{
+	cursor: pointer; 
+}
 
+.invi
+{
+  display: none;
+}
 /*.section-heading
 {
 	
