@@ -26,3 +26,17 @@ $("#awhat").click(function(){
 $("#ahow").click(function(){
     $("#ahow1").toggle();
 });
+
+
+$("#fa").click(function(){
+    $("#fwhat").toggle();
+    $("#fhow").toggle();
+});
+
+$("#fwhat").click(function(){
+    $("#fwhat1").toggle();
+});
+
+$("#fhow").click(function(){
+    $("#fhow1").toggle();
+});
