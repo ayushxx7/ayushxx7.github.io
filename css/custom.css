@@ -1,12 +1,37 @@
 body 
 { 
 	background: black !important; 
+ /* #252525*/
 }
+
 
 #aboutp
 {
-	
+	font-family: Helvetica,Georgia;
+	font-size: 1.2em;
+	color: white;
 }
+
+.knowhead
+{
+	font-size: 1.6em;
+	color: ;
+}
+
+ul li
+{
+	color: white;
+	font-family: Georgia,Helvetica;
+	font-size: 1.25em;
+}
+
+/*
+.knowlist li
+{
+	font-family: Georgia;
+	color: white;
+}*/
+
 a#meme
 {
   color:orange;
