@@ -4,18 +4,24 @@ body
  /* #252525*/
 }
 
-
 #aboutp
 {
 	font-family: Helvetica,Georgia;
-	font-size: 1.2em;
+	font-size: 1.21em;
 	color: white;
 }
 
 .knowhead
 {
 	font-size: 1.6em;
-	color: ;
+	color: #C63D0F;
+}
+
+.smallhead
+{
+	color: #C63D0F;
+	font-size: 1.4em;
+	padding-top: 0.6em;
 }
 
 ul li
