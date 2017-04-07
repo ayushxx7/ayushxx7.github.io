@@ -51,8 +51,13 @@ a#meme
 .pointer
 {
 	cursor: pointer; 
+	color: white;
 }
 
+.chco
+{
+	color: #9E9E9E;
+}
 .invi
 {
   display: none;
