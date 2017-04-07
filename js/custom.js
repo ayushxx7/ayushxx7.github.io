@@ -40,3 +40,32 @@ $("#fwhat").click(function(){
 $("#fhow").click(function(){
     $("#fhow1").toggle();
 });
+
+
+$("#ww").click(function(){
+    $("#cm").toggle();
+    $("#ad").toggle();
+    $("#adt").toggle();
+
+});
+
+$("#cm").click(function(){
+    $("#cwhat").toggle();
+    $("#cwhy").toggle();
+    $("#chow").toggle();
+    //$("#cwhat1").hide();
+});
+
+
+$("#cwhat").click(function(){
+    $("#cwhat1").toggle();
+});
+
+$("#chow").click(function(){
+    $("#chow1").toggle();
+});
+
+$("#cwhy").click(function(){
+    $("#cwhy1").toggle();
+});
+
