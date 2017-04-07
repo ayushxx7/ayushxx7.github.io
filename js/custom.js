@@ -69,3 +69,57 @@ $("#cwhy").click(function(){
     $("#cwhy1").toggle();
 });
 
+$("#ad").click(function(){
+    $("#adwhat").toggle();
+    $("#adwhy").toggle();;
+});
+
+
+$("#adwhat").click(function(){
+    $("#adwhat1").toggle();
+});
+
+
+$("#adwhy").click(function(){
+    $("#adwhy1").toggle();
+});
+
+
+$("#adt").click(function(){
+    $("#adtwhat").toggle();
+    $("#adtwhy").toggle();
+    $("#adthow").toggle();
+    //$("#cwhat1").hide();
+});
+
+
+$("#adtwhat").click(function(){
+    $("#adtwhat1").toggle();
+});
+
+$("#adthow").click(function(){
+    $("#adthow1").toggle();
+});
+
+$("#adtwhy").click(function(){
+    $("#adtwhy1").toggle();
+});
+
+
+$("#zl").click(function(){
+    $("#zlwhat").toggle();
+    $("#zlhow").toggle();
+    //$("#cwhat1").hide();
+});
+
+
+$("#zlwhat").click(function(){
+    $("#zlwhat1").toggle();
+});
+
+$("#zlhow").click(function(){
+    $("#zlhow1").toggle();
+});
+
+
+
