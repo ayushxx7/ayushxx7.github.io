@@ -43,9 +43,26 @@ a#meme
   color:orange;
 }
 
+/*#padred
+{
+  padding-bottom: 0em;
+}*/
+
+/*#page-bottom
+{
+	padding-bottom: 4em;
+	//padding-top: 4em;
+	margin-bottom: 0em;
+	margin-top: 0em;
+}*/
+/*a
+{
+	color: #4dd0e1;
+}*/
+
 #services
 {
-	padding-top: 4em;
+	padding-top: 2em;
 }
 
 .pointer
