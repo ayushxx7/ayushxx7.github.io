@@ -33,6 +33,10 @@ body
     color: #fff;
 }
 
+.padbtn
+{
+	padding: 1.1em;
+}
 #aboutp
 {
 	font-family: Helvetica,Georgia;

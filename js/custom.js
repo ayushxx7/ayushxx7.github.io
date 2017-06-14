@@ -12,8 +12,15 @@
         if(counter >= text.length) { counter = 0; }
     }
     setInterval(change, 5000);
-    
+ 
+$('#vr').on('click', function(event) {
+  window.open("https://drive.google.com/file/d/0ByGd2xHHajBgTHJKR3U4ZldhN2s/view?usp=sharing","_blank");    
+});    
 
+// $('#dr').on('click',function(event){
+//     event.preventDefault();
+//     window.location = '\img\\header-bg.jpg';
+// });
 $("#af").click(function(){
     $("#awhat").toggle();
     $("#ahow").toggle();
