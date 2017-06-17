@@ -33,6 +33,14 @@ body
     color: #fff;
 }
 
+@media ( min-width: 481px ) {
+  .my-btn-group {
+    
+    display: inline-block;
+  	
+  }
+}
+
 .padbtn
 {
 	padding: 1.1em;
