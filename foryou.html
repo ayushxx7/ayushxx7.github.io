@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dhanyavad</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+	<div id = "d1" style="color: white;">
+	<h1 style="text-align: center;"> Thanks!</h1>
+	<p style="text-align: center;">Such a nerd that the first gift I want to give is a fucking web page on my own website :P How stupid is that?</p>
+	</div>
+	<div style="color: white; font-size: 25px">
+		<h2> don't worry though </h2>
+		<p>Because it can atleast do some cool things like</p>
+		<ul>
+		<li id = "bg">Yahi se hui meri shuruat fir</li>
+		<button type="button" onclick="myFunction()">badlav</button>
+		<li id = "hide">oh shit there's a monster</li>
+		<button type="button" onclick="myFunction2()">bhaago!!</button>
+		<li id = "cl">Color me embarassed :P</li>
+		<div id="x">
+			<button type="button" onclick="myFunction3();">dil dikha de</button>
+		</div>
+		</ul>
+	
+<h1 style="text-align: center; color: blue;">WORK IN PROGRRESS!</h1>
+	</div>
+
+	<script type="text/javascript">
+	function myFunction() {
+    document.getElementById('bg').style.color = "red";
+	}
+
+	// function myFunction2() {
+	// 	if(document.getElementById('hide').style.display = "none")
+	// 	{
+	// 		document.getElementById('hide').style.display = "block";
+	// 	}	
+	// 	else
+	// 	{
+	// 	document.getElementById('hide').style.display = "none";
+	// }	}
+
+	function myFunction2() {
+		// body...
+		document.getElementById('hide').style.display = 'none';
+	}
+
+	function myFunction3() {
+    var img = document.createElement("img");
+ 
+img.src = "heart.png";
+var src = document.getElementById("x");
+ 
+src.appendChild(img);
+}
+	
+	</script>
+</body>
+</html>
