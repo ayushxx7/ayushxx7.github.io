@@ -65,7 +65,27 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Hey There!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
+                <!-- <div class="intro-heading" id="typeWriterEffect"></div> -->
+                <!-- <button onclick="typeWriter()">Click me</button> -->
+
+
+<p id="demo" style="font-size:1.6em; font-family: helvetica; color:#bfbfbf; text-shadow:  2px 2px #000000;"></p>
+
+<script>
+var i = 0;
+var txt = 'Fate Brought you here! Well Probably I did... Thanks for the TRAFFIC I guess :)';
+var speed = 45;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+} 
+
+typeWriter();
+</script>
                 
                 <a href="#services" class="page-scroll btn btn-xl ">Find easter eggs</a>
                     <!-- <button type="button" class="btn btn-primary btn-xl"> -->

@@ -1,3 +1,22 @@
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     var i = 0;
+// var txt = "Fate Brought you here! Well Probably I did..."; /* The text */
+// var speed = 50;  The speed/duration of the effect in milliseconds 
+//   if (i < txt.length) {
+//     document.getElementById("typeWriterEffect").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);s
+//   }
+// });
+
+// function typeWriter() {
+  
+// }
+s
+
+
  var text = ["<a href='https://github.com/ayushxx7'>I'm Here</a>", "<a href='https://facebook.com/ayush.mandowara'>I'm Also Here</a>", "<a href='https://www.twitter.com/ayushxx7'>And Here</a>","<a href=https://www.google.co.in/search?q=ayushxx7>Because, Why Not?</a>"];
  //var color = ["red","green","orange"]   
     var counter = 0;
