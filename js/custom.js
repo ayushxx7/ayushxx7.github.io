@@ -21,12 +21,13 @@
  //var color = ["red","green","orange"]   
     var counter = 0;
     var elem = document.getElementById("here");
-    
+    counter_color = ["RED","GREEN","BLUE","BLACK"];
     
     function change() {    
      //elem.className += " colorlink";   
      //elem.style.color = color[counter];
      elem.innerHTML = text[counter];
+      elem.style.color = counter_color[counter];
         counter++;
         if(counter >= text.length) { counter = 0; }
     }
