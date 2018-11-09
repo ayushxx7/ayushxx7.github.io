@@ -17,11 +17,11 @@
 //s
 
 
- var text = ["<a href='https://github.com/ayushxx7'>I'm Here</a>", "<a href='https://facebook.com/ayush.mandowara'>I'm Also Here</a>", "<a href='https://www.twitter.com/ayushxx7'>And Here</a>","<a href=https://www.google.co.in/search?q=ayushxx7>Because, Why Not?</a>"];
+ var text = ["<span style="color: red"><a href='https://github.com/ayushxx7'>I'm Here</a></span>", "<a href='https://facebook.com/ayush.mandowara'>I'm Also Here</a>", "<a href='https://www.twitter.com/ayushxx7'>And Here</a>","<a href=https://www.google.co.in/search?q=ayushxx7>Because, Why Not?</a>"];
  //var color = ["red","green","orange"]   
     var counter = 0;
     var elem = document.getElementById("here");
-    counter_color = ["RED","GREEN","BLUE","BLACK"];
+    counter_color = ["red","green","blue","white"];
     
     function change() {    
      //elem.className += " colorlink";   
