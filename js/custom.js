@@ -14,7 +14,7 @@
 // function typeWriter() {
   
 // }
-s
+//s
 
 
  var text = ["<a href='https://github.com/ayushxx7'>I'm Here</a>", "<a href='https://facebook.com/ayush.mandowara'>I'm Also Here</a>", "<a href='https://www.twitter.com/ayushxx7'>And Here</a>","<a href=https://www.google.co.in/search?q=ayushxx7>Because, Why Not?</a>"];
