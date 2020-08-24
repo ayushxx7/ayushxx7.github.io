@@ -3,286 +3,318 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Ayush Mandowara</title>
+  <title>Ayush Mandowara</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+  <!-- Theme CSS -->
+  <link href="css/agency.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
 
 </head>
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Ayush Mandowara</a>
-            </div>
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Ayush Mandowara</a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#page-bottom">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#services">Portfolio</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#page-bottom">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Hey There!</div>
+        <!-- <div class="intro-heading" id="typeWriterEffect"></div> -->
+        <!-- <button onclick="typeWriter()">Click me</button> -->
+
+
+        <p id="demo" style="font-size:1.6em; font-family: helvetica; color:#bfbfbf; text-shadow:  2px 2px #000000;"></p>
+
+        <script>
+          var i = 0;
+          var txt = 'Fate Brought you here! Well Probably I did... Thanks for the TRAFFIC I guess :)';
+          var speed = 45;
+
+          function typeWriter() {
+            if (i < txt.length) {
+              document.getElementById("demo").innerHTML += txt.charAt(i);
+              i++;
+              setTimeout(typeWriter, speed);
+            }
+          }
+
+          typeWriter();
+        </script>
+
+        <a href="#services" class="page-scroll btn btn-xl ">Find easter eggs</a>
+        <!-- <button type="button" class="btn btn-primary btn-xl"> -->
+
+        <div class="my-btn-group">
+
+          <button type="button" class="btn btn-lg btn-primary padbtn" id='vr'>
+            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;
+          </button>
+          <!-- <i class="fa fa-at fa-stack-1x fa-inverse"></i> -->
+
+          <a download="Resume_Ayush_Mandowara.pdf" href="\pdf\AyushMandowara_Resume.pdf">
+            <button type="button" class="btn btn-lg btn-primary padbtn" id='dr'>
+              <span class="glyphicon glyphicon-cloud-download"></span>&nbsp;
+            </button>
+          </a>
+
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+      </div>
+    </div>
+  </header>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Hey There!</div>
-                <!-- <div class="intro-heading" id="typeWriterEffect"></div> -->
-                <!-- <button onclick="typeWriter()">Click me</button> -->
-
-
-<p id="demo" style="font-size:1.6em; font-family: helvetica; color:#bfbfbf; text-shadow:  2px 2px #000000;"></p>
-
-<script>
-var i = 0;
-var txt = 'Fate Brought you here! Well Probably I did... Thanks for the TRAFFIC I guess :)';
-var speed = 45;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-} 
-
-typeWriter();
-</script>
-                
-                <a href="#services" class="page-scroll btn btn-xl ">Find easter eggs</a>
-                    <!-- <button type="button" class="btn btn-primary btn-xl"> -->
-                
-                <div class="my-btn-group">       
-                       
-                    <button type="button" class="btn btn-lg btn-primary padbtn" id='vr'>
-                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;
-                    </button>
-                        <!-- <i class="fa fa-at fa-stack-1x fa-inverse"></i> -->
-                   
-                    <a download="Resume_Ayush_Mandowara.pdf" href="\pdf\AyushMandowara_Resume.pdf">
-                    <button type="button" class="btn btn-lg btn-primary padbtn" id='dr'>
-                        <span class="glyphicon glyphicon-cloud-download"></span>&nbsp;
-	               </button>
-                   </a>
-
-                </div>   
-            </div>
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <h3 class="section-subheading text-muted" id='padred'>The Man, The Myth, The Legend27! </h3>
         </div>
-    </header>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-at fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3 class="service-heading" id='here'>A Bit About Me</h3>
+          <p class="text-muted" id='aboutp'> I Love to code.
+            And if I can, I will use Python <3. <a href="https://www.quora.com/profile/Ayush-Mandowara" id='meme'>
+              Reading and writing content</a> is one my favourite hobbies second only to exploring all kinds of codes,
+              their implementations and usecases. Care to dive into my
+              <a href='https://www.facebook.com/laughclub007' id='meme'>meme world</a> ? I <a
+                href="https://www.youtube.com/playlist?list=LLq0-qpfVb24-28m9A5b1VIw" id='meme'>watch </a>a lot of
+              YouTube and have <a href="https://www.youtube.com/user/ayushxx7/videos?shelf_id=0&sort=dd&view=0"
+                id='meme'> created content </a> which has collectively garnered over 7k views. Along with everything
+              else, my friends have turned me into a <a href="https://www.chess.com/member/ayushxx7" id='meme'>Chess
+                Addict</a> as well.
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted" id='padred'>The Man, The Myth, The Legend27! </h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-at fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h3 class="service-heading" id='here'>A Bit About Me</h3>
-                    <p class="text-muted" id='aboutp'> I Love to code.
-                        And if I can, I will use Python <3.
-                        <a href ="https://www.quora.com/profile/Ayush-Mandowara" id='meme'>Reading and writing content</a> is one my favourite hobbies second only to exploring all kinds of codes, their implementations and usecases. Care to dive into my
-                        <a href='https://www.facebook.com/laughclub007' id='meme'>meme world</a> ? I <a href="https://www.youtube.com/playlist?list=LLq0-qpfVb24-28m9A5b1VIw" id='meme'>watch </a>a lot of YouTube and have <a href="https://www.youtube.com/user/ayushxx7/videos?shelf_id=0&sort=dd&view=0" id='meme'> created content </a> which has collectively garnered over 7k views. Along with everything else, my friends have turned me into a <a href="https://www.chess.com/member/ayushxx7" id = 'meme'>Chess Addict</a> as well.
+              <br><br>
 
-                        <br><br>
-                        
-                        <h4>My Internet Handle for almost every account:</h4> <h3> @ayushxx7 </h3>   
-                        Find and hit me up! 
+              <h4>My Internet Handle for almost every account:</h4>
+              <h3> @ayushxx7 </h3>
+              Find and hit me up!
 
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h3 class="service-heading " id = 'fortytwo'><a href="https://www.google.co.in/search?q=the answer to life the universe and everything">What I know</a></h3>
-                    <h4 class="text-danger knowhead">Programming</h4>
-                    <p class="text-muted">
-                    <ul class="list-inline">
-                        <li>&bull; C/C++</li>
-                        <li>&bull; Python</li>
-                        <li>&bull; JavaScript</li>
-                        <li>&bull; Java</li>
-                    </ul>
-                    </p>
-                    <br>
-                    <h4 class="text-danger knowhead">Web Dev</h4>
-                    <ul class="list-inline">
-                        <li>&bull; HTML</li>
-                        <li>&bull; CSS</li>
-                        <li>&bull; JavaScript</li>
-                    </ul>
-                    <ul class="list-inline">
-                        <li>&bull; Django</li>
-                        <li>&bull; Bootstrap</li>
-                        <li>&bull; SQL</li>
-                    </ul>
-                    <br>
-                    <h4 class="text-danger knowhead">Tools</h4>
-                    <ul class="list-inline">
-                        <li>&bull; Sublime</li>
-                        <li>&bull; Git</li>
-                        <li>&bull; PyCharm</li>
-                        
-                    </ul>
-                    <ul class="list-inline">
-                        <li>&bull; GIMP</li>
-                        <li>&bull; Adobe PS</li>
-                        <li>&bull; Adobe AE</li>
-                    </ul>
-                    <ul class="list-inline">  
-                    <br>  
-                        <li class="smallhead">(OS) Linux, Windows</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h3 class="service-heading"><a href="https://www.github.com/ayushxx7">Project Work</a></h3>  
-                    
-                    <h4 class="pointer" id='af'>Auto File Renamer <a href="https://github.com/ayushxx7/Auto-File-Renamer"><i class="fa fa-github"></i></a></h4>   
-                        <h5 class="pointer invi" id='awhat'>What?</h5>
-                            <h6 class="invi chco" id='awhat1'>Files are renamed from formats such as s11e04.x264.HDTV.killers to S11E04 The Snuke</h6>
-                        
-                        <h5 class='pointer invi' id='ahow'>How?</h5>
-                            <h6 class="invi chco" id='ahow1'>
-                                    Scrapes episode list from Wikipedia using beautifulsoup, matches pattern of files on system using regex, renames to desired format using os library.
-                                </h6> 
-
-                    <h4 class="pointer" id='fa'>Facebook Autoliker <a href="https://github.com/ayushxx7/Facebook-Auto-Liker"><i class="fa fa-github"></i></a></h4>            
-                        <h5 class='pointer invi' id='fwhat'>What?</h5>
-                            <h6 class="invi chco" id='fwhat1'>Likes all images of a profile, without disliking images that were already liked.</h6>
-                        <h5 class='pointer invi' id='fhow'>How?</h5>
-                            <h6 class="invi chco" id='fhow1'>
-                            Checks image is liked or not using locateOnScreen, if not press 'L', move to next image, repeat.
-                            </h6>
-                            
-                    
-                    <h4 class='pointer' id='ww'>WHATSAPP WEB <a href="https://github.com/ayushxx7/Whatsapp_Web"><i class="fa fa-github"></i></a></h4>
-                        <h4 class="pointer invi" id='cm'>Custom Messages <a href="https://github.com/ayushxx7/Whatsapp_Web/blob/master/Custom%20Messages.py"><i class="fa fa-github"></i></a></h4>
-                            <h5 class="pointer invi" id='cwhat'>What?</h5>
-                                <h6 class="invi chco" id='cwhat1'>Sends custom messages to people in contact list with their name in it.</h6>
-                            <h5 class="pointer invi" id='chow'>How?</h5>
-                                <h6 class="invi chco" id='chow1'>Reads contacts from list of contacts,types it in the Name field, selects random text and image from a predefined list and sends it.
-                                </h6>
-                            <h5 class="pointer invi" id='cwhy'>Why?</h5>
-                            <h6 class="invi chco" id='cwhy1'>Because it's better to say 'Happy Diwali Ayush, kesa hai aajkal' over simply saying 'Happy Diwali'
-                            </h6>
-
-                        <h4 class="pointer invi" id ='ad'>Autodownload <a href="https://github.com/ayushxx7/Whatsapp_Web/blob/master/autoDL.py"><i class="fa fa-github"></i></a></h4>
-                            <h5 class="pointer invi" id='adwhat'>What?</h5>
-                                <h6 class="invi chco" id='adwhat1'>Bot to download images to pc automatically</h6>
-                            <h5 class="pointer invi" id='adwhy'>Why?</h5>
-                                <h6 class="invi chco" id='adwhy1'>Assignments. Also Bhavya.</h6>    
-                        
-                        <h4 class="pointer invi" id='adt'>AutoDot <a href="https://github.com/ayushxx7/Whatsapp_Web/blob/master/autodot.py"><i class="fa fa-github"></i></a></h4>
-                            <h5 class="pointer invi" id='adtwhat'>What?</h5>
-                                <h6 class="invi chco" id='adtwhat1'>Sends specified no. of dots to specified no. of people.</h6>
-                            <h5 class="pointer invi" id='adthow'>How?</h5>
-                                <h6 class="invi chco" id='adthow1'>PyAutoGui all the way!!</h6>
-                            <h5 class="pointer invi" id='adtwhy'>But Why though?</h5>
-                                <h6 class="invi chco" id='adtwhy1'>To see who's online and sometimes to spam the shit out of my friends :)</h6>
-
-                    <h4 class="pointer" id='zl'>Ziph's Law Verification <a href="https://github.com/ayushxx7/Ziphs_Law"><i class="fa fa-github"></i></a></h4>
-                        <h5 class="pointer invi" id='zlwhat'>What?</h5>
-                            <h6 class="invi chco" id='zlwhat1'><a href='https://www.youtube.com/watch?v=fCn8zs912OE' id='meme'>Ziph's law</a> states that given some corpus of natural language utterances, the frequency of any word is inversely proportional to its rank in the frequency table.</h6>
-                        <h5 class="pointer invi" id='zlhow'>How?</h5>
-                            <h6 class="invi chco" id='zlhow1'>
-                                Scanned subtitles of seasons of South Park, put them in descending order of frequency and plotted graph from obtained data to verify Ziph's Law.
-                            </h6> 
-                        
-                </div>
-            </div>
+          </p>
         </div>
-    </section>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3 class="service-heading " id='fortytwo'><a
+              href="https://www.google.co.in/search?q=the answer to life the universe and everything">What I know</a>
+          </h3>
+          <h4 class="text-danger knowhead">Programming</h4>
+          <p class="text-muted">
+            <ul class="list-inline">
+              <li>&bull; C/C++</li>
+              <li>&bull; Python</li>
+              <li>&bull; JavaScript</li>
+              <li>&bull; Java</li>
+            </ul>
+          </p>
+          <br>
+          <h4 class="text-danger knowhead">Web Dev</h4>
+          <ul class="list-inline">
+            <li>&bull; HTML</li>
+            <li>&bull; CSS</li>
+            <li>&bull; JavaScript</li>
+          </ul>
+          <ul class="list-inline">
+            <li>&bull; Django</li>
+            <li>&bull; Bootstrap</li>
+            <li>&bull; SQL</li>
+          </ul>
+          <br>
+          <h4 class="text-danger knowhead">Tools</h4>
+          <ul class="list-inline">
+            <li>&bull; Vim</li>
+            <li>&bull; Git</li>
+            <li>&bull; Sublime Text</li>
 
-    <footer id='page-bottom'>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Ayush Mandowara | 2017</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="twitter.com/ayushxx7"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="facebook.com/ayush.mandowara"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/ayushxx7/"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="mailto:ayushxx7@gmail.com?Subject=Hello%20Ayush">ayushxx7@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          </ul>
+          <ul class="list-inline">
+            <li>&bull; Jira</li>
+            <li>&bull; GIMP</li>
+            <li>&bull; Adobe PS</li>
+            <li>&bull; Adobe AE</li>
+          </ul>
+          <ul class="list-inline">
+            <br>
+            <li class="smallhead">(OS) Windows, Linux</li>
+          </ul>
         </div>
-    </footer>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3 class="service-heading"><a href="https://www.github.com/ayushxx7">Project Work</a></h3>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+          <h4 class="pointer" id='af'>Auto File Renamer <a href="https://github.com/ayushxx7/Auto-File-Renamer"><i
+                class="fa fa-github"></i></a></h4>
+          <h5 class="pointer invi" id='awhat'>What?</h5>
+          <h6 class="invi chco" id='awhat1'>Files are renamed from formats such as s11e04.x264.HDTV.killers to S11E04
+            The Snuke</h6>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+          <h5 class='pointer invi' id='ahow'>How?</h5>
+          <h6 class="invi chco" id='ahow1'>
+            Scrapes episode list from Wikipedia using beautifulsoup, matches pattern of files on system using regex,
+            renames to desired format using os library.
+          </h6>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+          <h4 class="pointer" id='fa'>Facebook Autoliker <a href="https://github.com/ayushxx7/Facebook-Auto-Liker"><i
+                class="fa fa-github"></i></a></h4>
+          <h5 class='pointer invi' id='fwhat'>What?</h5>
+          <h6 class="invi chco" id='fwhat1'>Likes all images of a profile, without disliking images that were already
+            liked.</h6>
+          <h5 class='pointer invi' id='fhow'>How?</h5>
+          <h6 class="invi chco" id='fhow1'>
+            Checks image is liked or not using locateOnScreen, if not press 'L', move to next image, repeat.
+          </h6>
 
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/fokus.min.js"></script>
+
+          <h4 class='pointer' id='ww'>WHATSAPP WEB <a href="https://github.com/ayushxx7/Whatsapp_Web"><i
+                class="fa fa-github"></i></a></h4>
+          <h4 class="pointer invi" id='cm'>Custom Messages <a
+              href="https://github.com/ayushxx7/Whatsapp_Web/blob/master/Custom%20Messages.py"><i
+                class="fa fa-github"></i></a></h4>
+          <h5 class="pointer invi" id='cwhat'>What?</h5>
+          <h6 class="invi chco" id='cwhat1'>Sends custom messages to people in contact list with their name in it.</h6>
+          <h5 class="pointer invi" id='chow'>How?</h5>
+          <h6 class="invi chco" id='chow1'>Reads contacts from list of contacts,types it in the Name field, selects
+            random text and image from a predefined list and sends it.
+          </h6>
+          <h5 class="pointer invi" id='cwhy'>Why?</h5>
+          <h6 class="invi chco" id='cwhy1'>Because it's better to say 'Happy Diwali Ayush, kesa hai aajkal' over simply
+            saying 'Happy Diwali'
+          </h6>
+
+          <h4 class="pointer invi" id='ad'>Autodownload <a
+              href="https://github.com/ayushxx7/Whatsapp_Web/blob/master/autoDL.py"><i class="fa fa-github"></i></a>
+          </h4>
+          <h5 class="pointer invi" id='adwhat'>What?</h5>
+          <h6 class="invi chco" id='adwhat1'>Bot to download images to pc automatically</h6>
+          <h5 class="pointer invi" id='adwhy'>Why?</h5>
+          <h6 class="invi chco" id='adwhy1'>Assignments. Also Bhavya.</h6>
+
+          <h4 class="pointer invi" id='adt'>AutoDot <a
+              href="https://github.com/ayushxx7/Whatsapp_Web/blob/master/autodot.py"><i class="fa fa-github"></i></a>
+          </h4>
+          <h5 class="pointer invi" id='adtwhat'>What?</h5>
+          <h6 class="invi chco" id='adtwhat1'>Sends specified no. of dots to specified no. of people.</h6>
+          <h5 class="pointer invi" id='adthow'>How?</h5>
+          <h6 class="invi chco" id='adthow1'>PyAutoGui all the way!!</h6>
+          <h5 class="pointer invi" id='adtwhy'>But Why though?</h5>
+          <h6 class="invi chco" id='adtwhy1'>To see who's online and sometimes to spam the shit out of my friends :)
+          </h6>
+
+          <h4 class="pointer" id='zl'>Ziph's Law Verification <a href="https://github.com/ayushxx7/Ziphs_Law"><i
+                class="fa fa-github"></i></a></h4>
+          <h5 class="pointer invi" id='zlwhat'>What?</h5>
+          <h6 class="invi chco" id='zlwhat1'><a href='https://www.youtube.com/watch?v=fCn8zs912OE' id='meme'>Ziph's
+              law</a> states that given some corpus of natural language utterances, the frequency of any word is
+            inversely proportional to its rank in the frequency table.</h6>
+          <h5 class="pointer invi" id='zlhow'>How?</h5>
+          <h6 class="invi chco" id='zlhow1'>
+            Scanned subtitles of seasons of South Park, put them in descending order of frequency and plotted graph from
+            obtained data to verify Ziph's Law.
+          </h6>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id='page-bottom'>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Ayush Mandowara | 2017</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li><a href="twitter.com/ayushxx7"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="facebook.com/ayush.mandowara"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/ayushxx7/"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li><a href="mailto:ayushxx7@gmail.com?Subject=Hello%20Ayush">ayushxx7@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
+    integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
+    crossorigin="anonymous"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/agency.min.js"></script>
+  <script src="js/fokus.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
