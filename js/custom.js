@@ -12,7 +12,7 @@ function change() {
 setInterval(change, 2500);
 
 $('#vr').on('click', function (event) {
-  window.open("https://drive.google.com/file/d/0ByGd2xHHajBgTHJKR3U4ZldhN2s/view?usp=sharing", "_blank");
+  window.open("https://drive.google.com/file/d/1NtLa6KpyWEDt7WqX4qmE_xW23C9ieo7f/view?usp=sharing", "_blank");
 });
 
 $("#af").click(function () {
