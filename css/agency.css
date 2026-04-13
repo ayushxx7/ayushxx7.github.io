@@ -226,55 +226,111 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
+  background-color: #000;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
   color: white;
 }
+header .container {
+  z-index: 10;
+  position: relative;
+}
 header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 0;
+  max-width: 550px;
+}
+/* Remove the glassmorphism box that was blocking the view */
+header .intro-text::before {
+  display: none;
+}
+header .intro-text .intro-lead-in,
+header .intro-text .intro-heading,
+header .intro-text .intro-subheading,
+header .intro-text .btn {
+  position: relative;
+  z-index: 11;
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
-  font-size: 22px;
-  line-height: 22px;
-  margin-bottom: 25px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #94a3b8;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 45px;
+  line-height: 1.1;
   margin-bottom: 25px;
+  letter-spacing: -1px;
+  background: linear-gradient(to bottom right, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+header .intro-text .intro-subheading {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* Photo handling: Fixed size on the right to prevent cropping subjects */
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-image: url('../img/ayush-header.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  z-index: 1;
+}
+
 @media (min-width: 768px) {
-  header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
-  }
-  header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 25px;
-  }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 75px;
-    margin-bottom: 50px;
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  header::after {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .container {
+    order: 2;
+  }
+  header .intro-text {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  header::after {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    order: 1;
+    background-position: center center;
   }
 }
 section {
