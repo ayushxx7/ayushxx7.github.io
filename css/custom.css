@@ -1,127 +1,68 @@
-body 
-{ 
-	background: black !important; 
- /* #252525*/
+/* Global Background */
+body {
+  background: black !important;
 }
 
-/*** Works on common browsers ***/
-::selection {
-    background-color: #352e7e;
-    color: #fff;
-}
+/* 
+   3x3 Grid Alignment Fix for Portfolio and Skills 
+   Forces equal height behavior and correct wrapping even with different content lengths.
+*/
+@media (min-width: 768px) {
+  #portfolio .row.text-center,
+  #skills .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-/*** Mozilla based browsers ***/
-::-moz-selection {
-    background-color: #352e7e;
-    color: #fff;
-}
-
-/***For Other Browsers ***/
-::-o-selection {
-    background-color: #352e7e;
-    color: #fff;
-}
-
-::-ms-selection {
-    background-color: #352e7e;
-    color: #fff;
-}
-
-/*** For Webkit ***/
-::-webkit-selection {
-    background-color: #352e7e;
-    color: #fff;
-}
-
-@media ( min-width: 481px ) {
-  .my-btn-group {
-    
-    display: inline-block;
-  	
+  /* Override Bootstrap 3 floats for flexbox items */
+  #portfolio .col-md-4,
+  #skills .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    float: none !important;
+    margin-bottom: 40px;
+  }
+  
+  /* Make description text take up remaining space if needed */
+  #portfolio .text-muted,
+  #skills .skill-list {
+    flex-grow: 1;
   }
 }
 
-.padbtn
-{
-	padding: 1.1em;
-}
-#aboutp
-{
-	font-family: Helvetica,Georgia;
-	font-size: 1.21em;
-	color: white;
+/* Text Selection */
+::selection {
+  background-color: #352e7e;
+  color: #fff;
 }
 
-.knowhead
-{
-	font-size: 1.6em;
-	color: #37474F;
+::-moz-selection {
+  background-color: #352e7e;
+  color: #fff;
 }
 
-.smallhead
-{
-	color: #37474F;
-	font-size: 1.4em;
-	padding-top: 0.6em;
+/* General Utilities */
+.pointer {
+  cursor: pointer;
+  color: white;
 }
 
-ul li
-{
-	color: white;
-	font-family: Georgia,Helvetica;
-	font-size: 1.25em;
-}
-
-/*
-.knowlist li
-{
-	font-family: Georgia;
-	color: white;
-}*/
-
-a#meme
-{
-  color:orange;
-}
-
-/*#padred
-{
-  padding-bottom: 0em;
-}*/
-
-/*#page-bottom
-{
-	padding-bottom: 4em;
-	//padding-top: 4em;
-	margin-bottom: 0em;
-	margin-top: 0em;
-}*/
-/*a
-{
-	color: #4dd0e1;
-}*/
-
-#services
-{
-	padding-top: 2em;
-	margin-bottom: -8em;
-}
-
-.pointer
-{
-	cursor: pointer; 
-	color: white;
-}
-
-.chco
-{
-	color: #9E9E9E;
-}
-.invi
-{
+.invi {
   display: none;
 }
-/*.section-heading
-{
-	
-}*/
+
+.chco {
+  color: #9E9E9E;
+}
+
+/* About Section Text Styling */
+#aboutp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Remove old mistakes/legacy code that might block layout */
+/* #services { ... } - Removed as it was causing margin issues and was unused */
