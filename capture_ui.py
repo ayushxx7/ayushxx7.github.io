@@ -44,12 +44,6 @@ async def capture_screenshots():
             await asyncio.sleep(1)
             await page.screenshot(path=os.path.join(output_dir, "desktop_portfolio.png"))
 
-        # Foryou page
-        print("📸 Capturing For You page...")
-        await page.goto(f"{url}/foryou.html")
-        await asyncio.sleep(2)
-        await page.screenshot(path=os.path.join(output_dir, "desktop_foryou.png"), full_page=True)
-
         # Mobile
         print("📸 Capturing Mobile view...")
         mobile_context = await browser.new_context(viewport={'width': 375, 'height': 812}, is_mobile=True)

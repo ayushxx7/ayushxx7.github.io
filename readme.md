@@ -16,9 +16,9 @@ This repository contains the source code for my personal portfolio website, show
 ## 📸 UI Gallery
 
 ### 🖥️ Desktop View
-| Home Page | Projects Section | For You Page |
-| :---: | :---: | :---: |
-| ![Desktop Home](showcase/desktop_home.png) | ![Portfolio Section](showcase/desktop_portfolio.png) | ![For You Page](showcase/desktop_foryou.png) |
+| Home Page | Projects Section |
+| :---: | :---: |
+| ![Desktop Home](showcase/desktop_home.png) | ![Portfolio Section](showcase/desktop_portfolio.png) |
 
 ### 📱 Mobile View
 | Home Page |
