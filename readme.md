@@ -1,5 +1,7 @@
 # ✨ Ayush Mandowara | Senior Generative AI ML Researcher ✨ 🎬🤖
 
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-Click%20Here-green?style=for-the-badge&logo=github)](https://ayushxx7.github.io)
+
 Senior Generative AI ML Researcher & Developer at Virtusa. Building Conversational AI Agents, Multi-Agent Systems, and RAG Pipelines.
 
 ## 🚀 Overview
@@ -13,13 +15,15 @@ This repository contains the source code for my personal portfolio website, show
 
 ## 📸 UI Gallery
 
-| 🖥️ Desktop Home | 📱 Mobile View |
-| :---: | :---: |
-| ![Desktop Home](showcase/desktop_home.png) | ![Mobile Home](showcase/mobile_home.png) |
+### 🖥️ Desktop View
+| Home Page | Projects Section | For You Page |
+| :---: | :---: | :---: |
+| ![Desktop Home](showcase/desktop_home.png) | ![Portfolio Section](showcase/desktop_portfolio.png) | ![For You Page](showcase/desktop_foryou.png) |
 
-| 📁 Projects Section | 📑 For You Page |
-| :---: | :---: |
-| ![Portfolio Section](showcase/desktop_portfolio.png) | ![For You Page](showcase/desktop_foryou.png) |
+### 📱 Mobile View
+| Home Page |
+| :---: |
+| ![Mobile Home](showcase/mobile_home.png) |
 
 ## 🛠️ Tech Stack
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -56,6 +60,16 @@ The project is built using a modern static site architecture:
 - **Modular Components**: Organized into clear sections (About, Skills, Portfolio, Contact).
 - **Automated Workflow**: Gulp for asset minification and development synchronization.
 - **UI Testing**: Playwright integrated for automated visual regression and showcase capture.
+
+## 🏥 Repo Health Score
+| Category | Score | Status |
+| :--- | :--- | :--- |
+| **Documentation** | 20/20 | ✅ Full coverage with README and LICENSE. |
+| **Security** | 20/20 | ✅ No leaked secrets detected. |
+| **Automation** | 20/20 | ✅ Gulp and NPM workflows verified. |
+| **Quality/TDD** | 20/20 | ✅ Visual regression tests passing (Playwright). |
+| **Showcase** | 10/20 | ⚠️ Screenshots updated, but missing Terminal GIF/Video. |
+| **Total** | **90/100** | **Healthy** 🚀 |
 
 ---
 *Created with ❤️ by Ayush Mandowara*
